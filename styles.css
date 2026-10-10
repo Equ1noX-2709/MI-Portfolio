@@ -1,6 +1,7 @@
 body {
     background-color: #C08552;
     margin: 0;
+    font-family: "Playpen Sans Arabic", Georgia, serif;
 }
 
 hr {
@@ -40,12 +41,12 @@ hr {
 }
 
 .divtext {
-    width: 500px;
+    width: 600px;
     margin: 0 0 0 auto;
 }
 
 .title-a, .title-b {
-    font-family: "Caveat Brush", cursive;
+    font-family: "Caveat Brush", Georgia, serif;
 }
 
 .title-a {
@@ -77,12 +78,22 @@ hr {
 
 .info {
     display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 25px;
     background-color: #FFF8F0;
     width: 70%;
     min-width: 700px;
     max-width: 1200px;
-    height: 500px;
     margin: 0 auto;
+    padding: 30px;
     border-radius: 40px;
     box-shadow: 8px 8px 20px 0px black;
 }
+
+.info > img {
+    width: 100%;
+}
+
+/*.info-text {
+    
+}*/
