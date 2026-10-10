@@ -1,7 +1,6 @@
 body {
     background-color: #C08552;
     margin: 0;
-    overflow: auto;
 }
 
 hr {
@@ -25,7 +24,8 @@ hr {
     display: flex;
     background-color: #FFF8F0;
     height: 660px;
-    box-shadow: 0 4px 20px 2px rgb(0, 0, 0);
+    box-shadow: 0 0px 20px 2px black;
+    overflow: hidden;
 }
 
 .flex-section {
@@ -37,6 +37,11 @@ hr {
 
 .flex-section.text {
     padding: 100px 40px;
+}
+
+.divtext {
+    width: 500px;
+    margin: 0 0 0 auto;
 }
 
 .title-a, .title-b {
@@ -53,10 +58,6 @@ hr {
     margin: 0;
 }
 
-.divtext {
-    width: 500px;
-    margin: 0 0 0 auto;
-}
 /*=======================|flex-section image|========================*/
 
 .flex-section.image {
@@ -70,4 +71,18 @@ hr {
     width: auto;
     height: 100%;
     margin: 0 0 0 25%;
+}
+
+/*=======================|info section|========================*/
+
+.info {
+    display: grid;
+    background-color: #FFF8F0;
+    width: 70%;
+    min-width: 700px;
+    max-width: 1200px;
+    height: 500px;
+    margin: 0 auto;
+    border-radius: 40px;
+    box-shadow: 8px 8px 20px 0px black;
 }
