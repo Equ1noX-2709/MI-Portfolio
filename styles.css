@@ -12,6 +12,7 @@ body {
 
 .flex-section.image {
     align-items: center;
+    width: 100%;
 }
 
 .flex-section, .image > img {
@@ -22,14 +23,23 @@ body {
 .NavBar {
     height: 50px;
     background-color: #8C5A3C;
-    margin-bottom: 40px;
 }
 
 .flex {
     display: flex;
     background-color: #C08552;
     width: 90%;
+    min-width: 500px;
+    max-width: 1000px;
     margin: 0 auto;
     justify-content: space-around;
     border-radius: 10px;
+}
+
+.skewed-shape {
+  width: 300px;
+  height: 200px;
+  background: #3498db;
+  /* Coordinates: Top-Left, Top-Right, Bottom-Right, Bottom-Left */
+  clip-path: polygon(0% 0%, 100% 0%, 80% 100%, 0% 100%); 
 }
