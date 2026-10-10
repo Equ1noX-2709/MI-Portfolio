@@ -85,15 +85,22 @@ hr {
     min-width: 700px;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 30px;
+    padding: 15px 25px;
     border-radius: 40px;
     box-shadow: 8px 8px 20px 0px black;
+}
+
+.info-text > div {
+    display: inline-block;
+    padding: 2px 15px;
+    border-radius: 20px;
+    color: #FFF8F0;
+    font-family: "Caveat Brush", Georgia, serif;
+    font-weight: bold;
+    font-size: 40px;
+    background-color: #8C5A3C;
 }
 
 .info > img {
     width: 100%;
 }
-
-/*.info-text {
-    
-}*/
