@@ -1,31 +1,35 @@
 body {
-    background-color: bisque;
+    background-color: #FFF8F0;
     margin: 0;
 }
 
-section {
-    background-color: aqua;
-    border: solid black 0.5px;
-    width: fit-content;
-    padding: 5px;
+.flex-section {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 10px;
 }
 
-section > img {
+.flex-section.image {
+    align-items: center;
+}
+
+.flex-section, .image > img {
     border-radius: 20px;
-    margin: 0px auto;
     width: 100%;
 }
 
 .NavBar {
     height: 50px;
-    background-color: rgb(106, 85, 59);
-    margin-bottom: 10px;
+    background-color: #8C5A3C;
+    margin-bottom: 40px;
 }
 
 .flex {
     display: flex;
-    background-color: antiquewhite;
+    background-color: #C08552;
     width: 90%;
     margin: 0 auto;
     justify-content: space-around;
+    border-radius: 10px;
 }
