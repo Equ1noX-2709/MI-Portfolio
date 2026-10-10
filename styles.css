@@ -1,0 +1,31 @@
+body {
+    background-color: bisque;
+    margin: 0;
+}
+
+section {
+    background-color: aqua;
+    border: solid black 0.5px;
+    width: fit-content;
+    padding: 5px;
+}
+
+section > img {
+    border-radius: 20px;
+    margin: 0px auto;
+    width: 100%;
+}
+
+.NavBar {
+    height: 50px;
+    background-color: rgb(106, 85, 59);
+    margin-bottom: 10px;
+}
+
+.flex {
+    display: flex;
+    background-color: antiquewhite;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: space-around;
+}
