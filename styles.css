@@ -218,7 +218,7 @@ main.MIs {
     color: #FFF8F0;
     text-decoration: none;
     font-weight: bold;
-    transition: background-color 0.4s;
+    transition: color 0.4s, background-color 0.4s;
 }
 
 .MI-text .MI-Button:hover {
