@@ -127,6 +127,7 @@ hr {
 .info > img {
     display: block;
     width: 100%;
+    height: 100%;
     border-radius: 20px;
     box-shadow: 0 0 15px 0px black;
 }
@@ -139,20 +140,21 @@ hr {
     color: #FFF8F0;
     font-family: "Caveat Brush", Georgia, serif;
     font-weight: bold;
-    font-size: 40px;
+    font-size: 3vw;
     background-color: #8C5A3C;
     box-shadow: 3px 3px 15px 0px black;
 }
 
 .info-text > p {
-    padding: 10px;
+    padding: 15px;
+    font-size: 1vw;
 }
 
 /*=======================|MI|========================*/
 
 main.MIs {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: auto auto;
     row-gap: 50px;
 }
 
@@ -205,10 +207,14 @@ main.MIs {
     color: #FFF8F0;
     font-family: "Caveat Brush", Georgia, serif;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 1.4vw;
     white-space: nowrap;
     background-color: #8C5A3C;
     box-shadow: 3px 3px 15px 0px black;
+}
+
+.MI-text p {
+    font-size: 1vw;
 }
 
 .MI-text .MI-Button {
@@ -221,6 +227,7 @@ main.MIs {
     color: #FFF8F0;
     text-decoration: none;
     font-weight: bold;
+    font-size: 1.2vw;
     transition: color 0.4s, background-color 0.4s;
 }
 
