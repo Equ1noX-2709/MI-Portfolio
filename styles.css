@@ -11,7 +11,7 @@ hr {
     width: 90%;
 }
 
-/*=======================|Navigation|========================*/
+/*=======================|NAVIGATION BAR|========================*/
 
 .NavBar {
     display: flex;
@@ -32,7 +32,7 @@ hr {
     white-space: nowrap;
     text-decoration: none;
     border-radius: 18px;
-    transition: background-color 0.4s;
+    transition: color 0.4s, background-color 0.4s;
 }
 
 
@@ -43,9 +43,10 @@ hr {
 .NavBar a:hover {
     background-color: #8C5A3C;
 }
-/*=======================|flex|========================*/
+/*=======================|FLEX (NAV)|========================*/
 
 .flex {
+    position: relative;
     display: flex;
     background-color: #FFF8F0;
     height: 660px;
@@ -63,7 +64,7 @@ hr {
     width: 50%;
 }
 
-/*=======================|left flex-section|========================*/
+/*=======================|LEFT FLEX-SECTION|========================*/
 
 .flex-section.left {
     padding: 115px 40px;
@@ -88,7 +89,7 @@ hr {
     margin: 0;
 }
 
-/*=======================|right flex-section|========================*/
+/*=======================|RIGHT FLEX-SECTION|========================*/
 
 .flex-section.right {
     padding: 75px 0 0 0;
@@ -107,7 +108,7 @@ hr {
     margin: 0 0 0 25%;
 }
 
-/*=======================|info section|========================*/
+/*=======================|INFO SECTION|========================*/
 
 .info {
     display: grid;
@@ -197,12 +198,12 @@ main.MIs {
 
 .MI-text div {
     width: fit-content;
-    padding: 2px 15px;
+    padding: 5px 20px;
     border-radius: 20px;
     color: #FFF8F0;
     font-family: "Caveat Brush", Georgia, serif;
     font-weight: bold;
-    font-size: 40px;
+    font-size: 30px;
     background-color: #8C5A3C;
     box-shadow: 3px 3px 15px 0px black;
 }
@@ -222,4 +223,232 @@ main.MIs {
 
 .MI-text .MI-Button:hover {
     background-color: #C08552;
+}
+
+/*=======================|TITLE SECTION|========================*/
+.title-section {
+    display: flex;
+    margin: -50px 0 50px;
+    height: 500px;
+    box-shadow: 0 0 20px 2px black inset;
+}
+
+.title-section p.intelligence {
+    margin: auto 0 50px 50px;
+    font-family: "Caveat Brush", Georgia, serif;
+    font-weight: bold;
+    font-size: 100px;
+    color: #FFF8F0;
+}
+
+/*==============================================|THEMES|===============================================*/
+
+/*=======================|NATURALIST THEME|========================*/
+
+body.Naturalist {
+    background-color: #F7F0F0;
+}
+
+body.Naturalist .flex {
+    background-color: #F7F0F0;
+    box-shadow: none;
+}
+
+body.Naturalist .flex-section.right {
+    background-color: #25671E;
+}
+
+body.Naturalist .title-section {
+    background-color: #48A111;
+}
+
+body.Naturalist .title-section p{
+    color: black;
+}
+
+body.Naturalist .NavBar a.selected {
+    background-color: #48A111;
+}
+
+body.Naturalist .NavBar a:hover {
+    background-color: #36770d;
+}
+
+body.Naturalist .info {
+    background-color: #48A111;
+}
+
+/*=======================|LOGICAL (AND LINGUISTIC) THEME|========================*/
+
+body.Logical {
+    background-color: #E3FEF7;
+}
+
+body.Logical .flex {
+    background-color: #E3FEF7;
+    box-shadow: none;
+}
+
+body.Logical .flex-section.right {
+    background-color: #003C42;
+}
+
+body.Logical .title-section {
+    background-color: #77B0AA;
+}
+
+body.Logical .title-section p{
+    color: black;
+}
+
+body.Logical .NavBar a.selected {
+    background-color: #77B0AA;
+}
+
+body.Logical .NavBar a:hover {
+    background-color: #135D66;
+}
+
+body.Logical .info {
+    background-color: #003C42;
+    color: #FFF8F0;
+}
+
+/*=======================|VISUAL (AND MUSICAL) THEME|========================*/
+
+body.Visual {
+    background-color: #FDF4D2;
+}
+
+body.Visual .flex {
+    background-color: #946D6D;
+    box-shadow: none;
+}
+
+body.Visual .flex-section.right {
+    background-color: #FDF4D2;
+}
+
+body.Visual .title-section {
+    background-color: #B0CDE6;
+}
+
+body.Visual .title-section p{
+    color: black;
+}
+
+body.Visual .NavBar a {
+    color: black;
+}
+
+body.Visual .NavBar a.selected {
+    background-color: #946D6D;
+    color: #FDF4D2;
+}
+
+body.Visual .NavBar a:hover {
+    background-color: #5f4949;
+    color: #FDF4D2;
+}
+
+body.Visual .info {
+    background-color: #B0CDE6;
+}
+
+/*=======================|BODILY THEME|========================*/
+
+body.Bodily {
+    background-color: #FFF8F0;
+}
+
+body.Bodily .flex {
+    background-color: #FFE1AF;
+    box-shadow: none;
+}
+
+body.Bodily .flex-section.right {
+    background-color: #B77466;
+}
+
+body.Bodily .title-section {
+    background-color: #E2B59A;
+}
+
+body.Bodily .title-section p{
+    color: black;
+}
+
+body.Bodily .NavBar a.selected {
+    background-color: #E2B59A;
+}
+
+body.Bodily .NavBar a:hover {
+    background-color: #957C62;
+}
+
+/*=======================|INTRA THEME|========================*/
+
+body.Intra {
+    background-color: #DCCFC0;
+}
+
+body.Intra .flex {
+    box-shadow: none;
+}
+
+body.Intra .flex-section.right {
+    background-color: #4b5549;
+}
+
+body.Intra .title-section {
+    background-color: #778873;
+}
+
+body.Intra .NavBar a.selected {
+    background-color: #8ba383;
+}
+
+body.Intra .NavBar a:hover {
+    background-color: #778873;
+}
+
+/*=======================|INTER THEME|========================*/
+
+body.Inter {
+    background-color: #FFF6DE;
+}
+
+body.Inter .flex {
+    background-color: #8BDFDD;
+    box-shadow: none;
+}
+
+body.Inter .flex-section.right {
+    background-color: #FFE394;
+}
+
+body.Inter .title-section {
+    background-color: #F48F68;
+}
+
+body.Inter .title-section p{
+    color: black;
+}
+
+body.Inter .NavBar a {
+    color: black;
+}
+
+body.Inter .NavBar a.selected {
+    background-color: #F48F68;
+    color: #FFF6DE;
+}
+
+body.Inter .NavBar a:hover {
+    background-color: #8BDFDD;
+    color: black;
+}
+
+body.Inter .info {
+    background-color: #F48F68;
 }
