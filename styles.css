@@ -53,14 +53,19 @@ hr {
     overflow: hidden;
 }
 
+.flex.nav {
+    height: 70px;
+    margin-bottom: 50px;
+}
+
 .flex-section {
     display: block;
     width: 50%;
 }
 
-/*=======================|flex-section text|========================*/
+/*=======================|left flex-section|========================*/
 
-.flex-section.text {
+.flex-section.left {
     padding: 115px 40px;
 }
 
@@ -83,15 +88,19 @@ hr {
     margin: 0;
 }
 
-/*=======================|flex-section image|========================*/
+/*=======================|right flex-section|========================*/
 
-.flex-section.image {
+.flex-section.right {
     padding: 75px 0 0 0;
     background-color: #4B2E2B;
     clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 20% 100%);
 }
 
-.flex-section.image > img {
+.flex.nav .flex-section.right {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 10% 100%);
+}
+
+.flex-section.right > img {
     display: block;
     width: auto;
     height: 100%;
@@ -136,4 +145,51 @@ hr {
 
 .info-text > p {
     padding: 10px;
+}
+
+/*=======================|MI|========================*/
+
+.MI {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    padding: 25px;
+    background-color: #FFF8F0;
+    width: 80%;
+    height: 300px;
+}
+
+.MI.left {
+    border-radius: 0 40px 40px 0;
+}
+
+FLEXFLEX
+
+.MI img {
+    height: 300px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px 0px black;
+    justify-self: center;
+}
+
+.MI-text div {
+    width: fit-content;
+    padding: 2px 15px;
+    border-radius: 20px;
+    color: #FFF8F0;
+    font-family: "Caveat Brush", Georgia, serif;
+    font-weight: bold;
+    font-size: 40px;
+    background-color: #8C5A3C;
+    box-shadow: 3px 3px 15px 0px black;
+}
+
+.MI-text .MI-Button {
+    width: fit-content;
+    margin-top: auto;
+    padding: 6px 15px;
+    background-color: #8C5A3C;
+    border-radius: 20px;
+    color: #FFF8F0;
+    text-decoration: none;
+    font-weight: bold;
 }
