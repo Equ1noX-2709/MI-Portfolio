@@ -157,8 +157,8 @@ main.MIs {
 }
 
 .MI {
+    overflow: hidden;
     display: flex;
-    padding: 25px;
     background-color: #FFF8F0;
     width: 90%;
     height: 300px;
@@ -166,21 +166,23 @@ main.MIs {
 }
 
 .MI.left {
+    padding: 25px 25px 25px 0;
     border-radius: 0 40px 40px 0;
 }
 
 .MI.left * {
-    margin-left: 20px;
+    margin-left: 15px;
 }
 
 .MI.right {
     flex-direction: row-reverse;
     margin-left: auto;
+    padding: 25px 0 25px 25px;
     border-radius: 40px 0 0 40px;
 }
 
 .MI.right * {
-    margin-right: 20px;
+    margin-right: 15px;
 }
 
 .MI img {
@@ -204,6 +206,7 @@ main.MIs {
     font-family: "Caveat Brush", Georgia, serif;
     font-weight: bold;
     font-size: 30px;
+    white-space: nowrap;
     background-color: #8C5A3C;
     box-shadow: 3px 3px 15px 0px black;
 }
@@ -219,6 +222,10 @@ main.MIs {
     text-decoration: none;
     font-weight: bold;
     transition: color 0.4s, background-color 0.4s;
+}
+
+.MI.right .MI-text .MI-Button {
+    align-self: flex-start;
 }
 
 .MI-text .MI-Button:hover {
