@@ -257,6 +257,7 @@ main.MIs {
     display: flex;
     margin: -50px 0 50px;
     height: 500px;
+    background-color: #C08552;
     box-shadow: 0 0 20px 2px black inset;
 }
 
