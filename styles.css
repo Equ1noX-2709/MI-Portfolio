@@ -112,10 +112,10 @@ hr {
 
 .info {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: auto auto;
     column-gap: 25px;
     background-color: #FFF8F0;
-    width: 70%;
+    width: 80%;
     min-width: 700px;
     max-width: 1200px;
     margin: 0 auto;
@@ -127,21 +127,21 @@ hr {
 .info > img {
     display: block;
     width: 100%;
-    height: 100%;
+    align-self: center;
     border-radius: 20px;
     box-shadow: 0 0 15px 0px black;
 }
 
-.info-text > div {
+.info-text > div{
     display: inline-block;
     margin-right: auto;
     padding: 2px 15px;
     border-radius: 20px;
-    color: #FFF8F0;
+    background-color: #8C5A3C;
+    color: white;
     font-family: "Caveat Brush", Georgia, serif;
     font-weight: bold;
     font-size: 3vw;
-    background-color: #8C5A3C;
     box-shadow: 3px 3px 15px 0px black;
 }
 
@@ -289,7 +289,15 @@ body.Naturalist .NavBar a:hover {
 }
 
 body.Naturalist .info {
+    grid-template: '. txt' '. txt';
     background-color: #48A111;
+}
+
+body.Naturalist .info .info-text {
+    border-radius: 20px;
+    background-color: #FFF8F0;
+    color: black;
+    box-shadow: 3px 3px 15px 0px black;
 }
 
 /*=======================|LOGICAL (AND LINGUISTIC) THEME|========================*/
