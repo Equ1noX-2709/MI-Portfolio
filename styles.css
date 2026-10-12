@@ -460,6 +460,13 @@ body.Intra .NavBar a:hover {
     background-color: #778873;
 }
 
+body.Intra .info .info-text {
+    border-radius: 20px;
+    background-color: #4b5549;
+    color: #FFF8F0;
+    box-shadow: 3px 3px 15px 0px black;
+}
+
 /*=======================|INTER THEME|========================*/
 
 body.Inter {
@@ -499,4 +506,11 @@ body.Inter .NavBar a:hover {
 
 body.Inter .info {
     background-color: #F48F68;
+}
+
+body.Inter .info .info-text {
+    border-radius: 20px;
+    background-color: #8BDFDD;
+    color: black;
+    box-shadow: 3px 3px 15px 0px black;
 }
