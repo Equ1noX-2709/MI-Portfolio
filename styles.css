@@ -125,11 +125,24 @@ hr {
 }
 
 .info img {
-    display: block;
+    display: inline-block;
     width: 100%;
     align-self: center;
     border-radius: 20px;
     box-shadow: 0 0 15px 0px black;
+}
+
+.info a {
+    padding: 2px 10px;
+    border-radius: 18px;
+    background-color: #8C5A3C;
+    text-decoration: none;
+    color: #FFF8F0;
+    transition: color 0.4s, background-color 0.4s;
+}
+
+.info a:hover {
+    background-color: #4B2E2B;
 }
 
 .info-text > div {
@@ -207,14 +220,14 @@ main.MIs {
     color: #FFF8F0;
     font-family: "Caveat Brush", Georgia, serif;
     font-weight: bold;
-    font-size: 1.4vw;
+    font-size: min(1.4vw, 40px);
     white-space: nowrap;
     background-color: #8C5A3C;
     box-shadow: 3px 3px 15px 0px black;
 }
 
 .MI-text p {
-    font-size: 1vw;
+    font-size: min(1vw, 14px);
 }
 
 .MI-text .MI-Button {
@@ -227,7 +240,7 @@ main.MIs {
     color: #FFF8F0;
     text-decoration: none;
     font-weight: bold;
-    font-size: 1.2vw;
+    font-size: min(1.2vw, 20px);
     transition: color 0.4s, background-color 0.4s;
 }
 
@@ -336,6 +349,16 @@ body.Logical .NavBar a:hover {
 
 body.Logical .info {
     background-color: #003C42;
+    color: #FFF8F0;
+}
+
+body.Logical .info a {
+    background-color: #77B0AA;
+    color: black;
+}
+
+body.Logical .info a:hover {
+    background-color: #135D66;
     color: #FFF8F0;
 }
 
