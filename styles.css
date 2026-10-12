@@ -403,13 +403,6 @@ body.Visual .info {
     background-color: #B0CDE6;
 }
 
-body.Visual .info .info-text {
-    border-radius: 20px;
-    background-color: #946D6D;
-    color: #FFF8F0;
-    box-shadow: 3px 3px 15px 0px black;
-}
-
 /*=======================|BODILY THEME|========================*/
 
 body.Bodily {
