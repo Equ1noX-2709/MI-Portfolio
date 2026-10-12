@@ -356,6 +356,7 @@ body.Logical .info {
 body.Logical .info a {
     background-color: #77B0AA;
     color: black;
+    white-space: nowrap;
 }
 
 body.Logical .info a:hover {
